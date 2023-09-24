@@ -15,7 +15,7 @@ export default function Home() {
     onAuthStateChanged(auth, (user) => {
       if (user) {      
         const uid = user.uid;
-        console.log(uid)
+        // console.log(uid)
       } else {
         router.push('/login', undefined, { shallow: true })
       }

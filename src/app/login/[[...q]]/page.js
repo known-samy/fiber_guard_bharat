@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import {useState,useEffect} from 'react'
@@ -45,7 +46,6 @@ export default function Home({ params }) {
         setLoading(false);
         setShowOTP(true);
         console.log("OTP sended successfully!");
-        console.log(window.recaptchaVerifier)
       })
       .catch((error) => {
           grecaptcha.reset(0);
@@ -60,7 +60,7 @@ export default function Home({ params }) {
     window.confirmationResult
       .confirm(otp)
       .then(async (res) => {
-        console.log(res);
+        // console.log(res);
         setUser(res.user);
         setLoading(false);
         if(params.q){
