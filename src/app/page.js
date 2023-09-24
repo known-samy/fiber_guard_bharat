@@ -24,7 +24,6 @@ export default function Home() {
 
   function signout(){    
     signOut(auth).then(() => {
-      alert("SignOut Successfully")
     }).catch((error) => {
       // An error happened.
     });
