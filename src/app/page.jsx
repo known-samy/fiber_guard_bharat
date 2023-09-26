@@ -11,7 +11,7 @@ import { data } from './data';
 
 
 import {OverviewIcon,DownloadIcon} from '@/components/Icons/Icons'
-import LineChart from '@/components/chart/Line';
+// import LineChart from '@/components/chart/Line';
 
 
 

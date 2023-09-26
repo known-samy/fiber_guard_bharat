@@ -1,5 +1,5 @@
 
-import { connectToDB,database } from "@/database";
+import { connectToDB,database } from "@/app/utils/database";
 
 
 export async function GET(req,{ params }) {

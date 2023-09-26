@@ -6,7 +6,7 @@ import React,{useState,useEffect} from 'react'
 import {  onAuthStateChanged,signOut} from "firebase/auth";
 import { auth } from '@/components/firebase/firebase';
 // import React, { Component } from "react";
-import Chart from "react-apexcharts";
+// import Chart from "react-apexcharts";
 
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'];
@@ -45,12 +45,12 @@ export const LineChart = () => {
  
   return (
   <>
-  <Chart
+  {/* <Chart
               options={chartdata.options}
               series={chartdata.series}
               type="line"
               width="100%"
-            />
+            /> */}
    {/* <button onClick={signOut}>SignOut</button>  */}
   </>
   )
