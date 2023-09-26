@@ -1,21 +1,30 @@
-import { NextResponse } from "next/server";
-import { data } from "./data";
-// import { connectToDB } from "@/utils/databse"
-// import User from "@/models/User"
+
+import { connectToDB,database } from "@/database";
+
 
 export async function GET(req,{ params }) {
-    // await connectToDB();
+
+    await connectToDB();
+
+    const Prices = database.collection('Prices');
+
+    const query = { data: 'woolprices' };
+
+    const doc = await Prices.findOne(query);
+    
 
     let body = params.year;
-    var year = new Date().getFullYear();
+
+    
     if(!body){
-        return new Response(JSON.stringify(data[year]),{status: 200});
+        var year = new Date().getFullYear();
+        return new Response(JSON.stringify(doc.year[year]),{status: 200});
     }
     if(body.length == 1){
         if(body[0] < 2003 || body[0] > year){
             return new Response("Invalid Year", {status: 400});
         }
-        return new Response(JSON.stringify(data[body[0]]),{status: 200});
+        return new Response(JSON.stringify(doc.year[body[0]]),{status: 200});
     }
     if(body.length == 2){
         if(body[0] < 2003 || body[0] > year || body[1] < 2003 || body[1] > year){
@@ -23,9 +32,9 @@ export async function GET(req,{ params }) {
         }
         var newdata = {};
         for(var i = body[0]; i <= body[1]; i++){
-            newdata[i] = data[i];
+            newdata[i] = doc.year[i];
         }
         return new Response(JSON.stringify(newdata));
     }
-    return new Response(JSON.stringify(data[2010]),{status: 200});
+    return new Response(JSON.stringify(doc.year[2023]),{status: 200});
 }
