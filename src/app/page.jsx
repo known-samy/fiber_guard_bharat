@@ -22,13 +22,13 @@ export default function Home() {
   const [prices,setPrices]= useState();
 
 
-  useEffect(() => {
-    (async () => {
-      await fetch('http://localhost:3000/api/wool/prices/2003/2023 ')
-      .then(response=>response.json())
-      .then(json=> setPrices(json))
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     await fetch('http://localhost:3000/api/wool/prices/2003/2023 ')
+  //     .then(response=>response.json())
+  //     .then(json=> setPrices(json))
+  //   })();
+  // }, []);
 
   if(prices!=undefined){
 
