@@ -1,7 +1,7 @@
 "use client"
 
 
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 
 
 import {
@@ -30,31 +30,41 @@ ChartJS.register(
 export const options = {
   responsive: true,
   plugins: {
-    legend: {
-      position: 'top',
-    },
     title: {
-      display: true,
+      display: false,
       text: 'Chart.js Line Chart',
     },
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'];
 
-export const data = {
+const data = {
   labels,
   datasets: [
     {
-      label: 'Dataset 1',
+      // label: 'Dataset 1',
       data: [65, 59, 80, 81, 56, 55, 40],
-      borderColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(225, 148, 111)',
       backgroundColor: 'rgba(255, 99, 132, 0.5)',
     },
   ]
 };
 
 export const Page = () => {
+
+  const [data1, setData] = React.useState({});
+
+  useEffect(() => {
+    async function fetchData() {
+      await fetch('http://localhost:3000/api/wool/prices').then(response => response.json()).then(json => setData(()=>json));
+      // data1[0]
+
+    }
+    fetchData();
+  },[]);
+  console.log(Object(data1[0])['Jan'])
+ 
   return <Line options={options} data={data} />;
 }
 export default Page;

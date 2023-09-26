@@ -81,7 +81,6 @@ export default function Home({ params }) {
   return (
     <>
     <div id='sign-in-button' style={{position:'absolute',top:'-200%',display:'none'}}></div>
-    <Navigation/>
     <div className="flex flex-col justify-center items-center w-full">
       
       <div className="flex flex-col justify-start items-start bg-[#EBE3E0] w-fit rounded-lg p-8 " style={{marginTop:"calc(100vh - (100vh - 100px))"}}>
