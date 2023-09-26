@@ -25,13 +25,10 @@ export default function Home({ params }) {
   }
 
   function onCaptchVerify() {
-
-    if (typeof window !== 'undefined') {
-
       window.recaptchaVerifier = new RecaptchaVerifier(auth, 'sign-in-button', {
         'size': 'invisible',
       });
-    }
+
   }
 
   function onSignup() {

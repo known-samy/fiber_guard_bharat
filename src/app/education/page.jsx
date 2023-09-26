@@ -38,7 +38,7 @@ export const Navigation = ({activeIndex,activeChange}) => {
 export function NavItem({active=false,title,id,activeChange}) {
 
   return (
-    <div className={`w-full p-3 bg-transparent transition-all  hover:bg-orange-600 hover:text-white rounded-lg ${active?"bg-orange-600 text-white":""}`} onClick={()=>activeChange(id)}>
+    <div className={`w-full p-3  transition-all  hover:bg-orange-600 hover:text-white rounded-lg ${active?"bg-orange-600 text-white":""}`} onClick={()=>activeChange(id)}>
       {title}
     </div>
   )
@@ -51,7 +51,7 @@ export function NavItem({active=false,title,id,activeChange}) {
     <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
         <div className='font-extrabold text-3xl w-full px-3 '>{title}</div>
         <div className="image  mx-auto mt-5">
-        <iframe width="560" className='mx-auto w-full rounded-md overflow-hidden' height="315" src="https://www.youtube.com/embed/YwRbyTCqOQY?si=JW_objFdy-FGDpno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" className='mx-auto w-full rounded-md overflow-hidden' height="315" src="https://www.youtube.com/embed/YwRbyTCqOQY?si=JW_objFdy-FGDpno" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <section className='w-full mt-5'>
         Wool is a natural fiber derived from the fleece of sheep and certain other animals, primarily goats (cashmere and mohair), rabbits (angora wool), and even some camel species. It is one of the oldest and most versatile textile materials known to humanity, with a rich history dating back thousands of years. Here's an explaining description of wool:

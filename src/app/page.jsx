@@ -16,7 +16,7 @@ import LineChart from '@/components/chart/Line';
 
 
 
-export default function Home() {
+export default function Page() {
 
   const router = useRouter()
   const [prices,setPrices]= useState();
@@ -32,7 +32,7 @@ export default function Home() {
 
   if(prices!=undefined){
 
-    console.log(prices["2021"])
+    // console.log(prices["2021"])
   }
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function Home() {
     });
   }
   
-  console.log(auth.currentUser)
+  // console.log(auth.currentUser)
 
 
   return (
@@ -128,7 +128,7 @@ function PriceSection(){
             <span className='font-bold text-3xl block'>Rs. {price}/Quintal</span>
             {/* <span>updated 2hrs ago</span> */}
           </div>
-          <LineChart/>
+          {/* <LineChart/> */}
 
           <div className="price-header flex items-center justify-between mt-5">
             <div className='left flex gap-x-3 items-center'>

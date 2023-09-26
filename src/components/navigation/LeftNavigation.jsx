@@ -8,7 +8,7 @@ import { UserContext } from '../firebase/userProvider'
 export const LeftNavigation = ({open,toggle}) => {
   const pathname = usePathname()
   const user =useContext(UserContext);
-  console.log(user)
+  // console.log(user)
 
   var classes = `flex flex-col bg-neutral-950 h-screen w-72 absolute z-50 top-0 ${open==true?'left-0':'left-[-100%]'} sm:hidden transition-all`
   return (
@@ -21,7 +21,7 @@ export const LeftNavigation = ({open,toggle}) => {
         {pathname!="/login" && <div className='flex flex-col items-start w-full  space-y-5 px-5 mt-10'>            
                 <Button title='Market & News' active={pathname=='/'?true:false} url='/' />
                 <Button title='Education' active={pathname=='/education'?true:false} url='/education' />                
-                <Button title='Dashboard' active={pathname=='/dashboard'?true:false} url='/dashboard' />                
+                {/* <Button title='Dashboard' active={pathname=='/dashboard'?true:false} url='/dashboard' />                 */}
         </div>}
         </div>
     </div>

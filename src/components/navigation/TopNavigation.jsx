@@ -16,7 +16,7 @@ export const TopNavigation = ({toggle}) => {
         {pathname!="/login" && <div className='hidden sm:flex items-center justify-between space-x-2'>            
                 <Button title='Market & News' active={pathname=='/'?true:false} url='/' />
                 <Button title='Education' active={pathname=='/education'?true:false} url='/education' />                
-                <Button title='Dashboard' active={pathname=='/dashboard'?true:false} url='/dashboard' />                
+                {/* <Button title='Dashboard' active={pathname=='/dashboard'?true:false} url='/dashboard' />                 */}
         </div>}
     </div>
   )
