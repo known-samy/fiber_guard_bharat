@@ -1,7 +1,11 @@
 import { NextResponse } from "next/server";
 import { data } from "./data";
+// import { connectToDB } from "@/utils/databse"
+// import User from "@/models/User"
 
 export async function GET(req,{ params }) {
+    // await connectToDB();
+
     let body = params.year;
     var year = new Date().getFullYear();
     if(!body){

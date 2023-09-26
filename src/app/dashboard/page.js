@@ -3,7 +3,8 @@
 
 import React,{useState,useEffect} from 'react'
 
-
+import {  onAuthStateChanged,signOut} from "firebase/auth";
+import { auth } from '@/components/firebase/firebase';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -64,7 +65,20 @@ export const Page = () => {
     fetchData();
   },[]);
   console.log(Object(data1[0])['Jan'])
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+
+    }
+    else{
+        router.push('/login')
+    }
+});
  
-  return <Line options={options} data={data} />;
+  return (
+  <>
+   <Line options={options} data={data} />;
+   {/* <button onClick={signout}>SignOut</button>  */}
+  </>
+  )
 }
 export default Page;
