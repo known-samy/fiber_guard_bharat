@@ -11,7 +11,8 @@ import { data } from './data';
 
 
 import {OverviewIcon,DownloadIcon} from '@/components/Icons/Icons'
-// import LineChart from '@/components/chart/Line';
+import LineCh from '@/components/chart/Line';
+
 
 
 
@@ -35,16 +36,16 @@ export default function Page() {
     // console.log(prices["2021"])
   }
 
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {      
-        const uid = user.uid;
-        // console.log(uid)
-      } else {
-        // router.push('/login', undefined, { shallow: true })
-      }
-    });
-  })
+  // useEffect(() => {
+  //   onAuthStateChanged(auth, (user) => {
+  //     if (user) {      
+  //       const uid = user.uid;
+  //       // console.log(uid)
+  //     } else {
+  //       router.push('/login', undefined, { shallow: true })
+  //     }
+  //   });
+  // })
 
   function signout(){    
     signOut(auth).then(() => {
@@ -58,8 +59,8 @@ export default function Page() {
 
   return (
     <>
-      <div className="main-body p-3 max-sm:space-y-3 sm:flex sm:gap-x-3 ">
-        <div className="price w-full sm:w-2/3 sm:sticky top-0 h-fit sm:h-screen border-2 rounded-lg border-neutral-200">
+      <div className="main-body p-3 max-sm:space-y-3 md:flex md:gap-x-3 ">
+        <div className="price w-full md:w-2/3 md:sticky top-0 h-fit md:h-screen border-2 rounded-lg border-neutral-200">
             <PriceSection/>
         </div>
         <div className="news w-full rounded-sm space-y-3">
@@ -117,7 +118,7 @@ function PriceSection(){
                   <option value="max">Max</option>
                 </select>
               </div>
-              <a className='p-2 px-3S bg-orange-500 text-white rounded-md flex items-center gap-x-3'>
+              <a href='https://docs.google.com/spreadsheets/d/1qNCK6ggc3makV07neZT3WM-10eLhGzXKQHE8JANYUG0/edit?usp=drive_link' className='p-2 px-3S bg-orange-500 text-white rounded-md flex items-center gap-x-3'>
                 <DownloadIcon/>
                 <span>Download Report</span>
               </a>
@@ -128,7 +129,9 @@ function PriceSection(){
             <span className='font-bold text-3xl block'>Rs. {price}/Quintal</span>
             {/* <span>updated 2hrs ago</span> */}
           </div>
-          {/* <LineChart/> */}
+          <div className='w-full relative h-72 mt-6 mb-6'>
+            <LineCh/>
+          </div>
 
           <div className="price-header flex items-center justify-between mt-5">
             <div className='left flex gap-x-3 items-center'>

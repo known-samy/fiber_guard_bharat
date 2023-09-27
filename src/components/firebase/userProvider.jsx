@@ -9,15 +9,11 @@ import { useRouter } from 'next/navigation'
 export const UserContext = createContext();
 
 export const UserProvider = ({children}) => {
-    var user1 = auth.currentUser;
-    const router = useRouter();
+  
     const [currentUser, setCurrentUser] = useState(null);
     onAuthStateChanged(auth, (user) => {
         if (user) {
           setCurrentUser(user);
-        }
-        else{
-           
         }
     });
 

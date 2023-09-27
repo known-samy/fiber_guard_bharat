@@ -7,6 +7,7 @@ import { auth } from '@/components/firebase/firebase';
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { useRouter } from 'next/navigation'
 import OtpInput from 'react-otp-input';
+import { onAuthStateChanged,signOut} from "firebase/auth";
 
 
 
@@ -23,7 +24,12 @@ export default function Home({ params }) {
     setShowOTP(false);
     setOtp("");
   }
-
+  function signout(){    
+    signOut(auth).then(() => {
+    }).catch((error) => {
+      // An error happened.
+    });
+  }
   function onCaptchVerify() {
       window.recaptchaVerifier = new RecaptchaVerifier(auth, 'sign-in-button', {
         'size': 'invisible',
@@ -136,7 +142,7 @@ export default function Home({ params }) {
           </div>
         )}
       </div>
-
+            <button onClick={signout} className='mt-[600px]'>Signout</button>
 
     </div>
 

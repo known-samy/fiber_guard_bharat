@@ -1,24 +1,17 @@
+import { MongoClient,ObjectId } from "mongodb";
+const uri = process.env.MONGODB_URI;
 
-import { MongoClient } from "mongodb";
-
-
-let isConnected = false;
-const client = new MongoClient(process.env.MONGODB_URI);
+const client = new MongoClient(uri);
+client.connect();
 export var database;
 
-export const connectToDB = async () => {
-    if (isConnected) {
-        console.log('=> using existing database connection');
-        return;
-    }
-    try{
-        database = client.db('FiberGuard');
-        
-        isConnected = true;
-        console.log('=> using new database connection');
-    }
-    catch(err){
-        console.log(err)
-    }
+export async function connectToDB() {
+    try {
+      var id = new ObjectId("65137dea4ff974eb2dd95065");
+      database = client.db("fiberguard1");
 
-};
+    }
+    catch (err) {
+      console.log(err);
+  }
+}
