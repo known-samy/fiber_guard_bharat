@@ -17,11 +17,11 @@ const Page = () => {
       {active==1 && <ContentSection1 />}
       {active==2 && <ContentSection2 />}
       {active==3 && <ContentSection3 />}
-      {active==4 && <ContentSection3 />}
-      {active==5 && <ContentSection3 />}
-      {active==6 && <ContentSection3 />}
-      {active==7 && <ContentSection3 />}
-      {active==8 && <ContentSection3 />}
+      {active==4 && <ContentSection4 />}
+      {active==5 && <ContentSection5 />}
+      {active==6 && <ContentSection6 />}
+      {active==7 && <ContentSection7 />}
+      {active==8 && <ContentSection8 />}
       {active==9 && <ContentSection9 />}
       {active==10 && <ContentSection10 />}
       {active==11 && <ContentSection11 />}
@@ -107,7 +107,7 @@ export function NavItem({active=false,title,id,activeChange}) {
     <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
         <div className='font-extrabold text-3xl w-full px-3 '>Types of Wool</div>
         <div className="image  mx-auto mt-5">
-        <iframe className='mx-auto' width="560" height="315" src="https://www.youtube.com/embed/RWlfgPcCwHg?si=s_0egD0YJPt2oeHK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+        <iframe className='mx-auto w-full rounded-md overflow-hidden' width="560" height="315" src="https://www.youtube.com/embed/RWlfgPcCwHg?si=s_0egD0YJPt2oeHK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
         <section className='w-full mt-5'>
           <b>1. Lambswool</b><br />
           Lambswool comes from the first shearing of a young sheep (lamb) which is shorn around seven months. It’s sometimes referred to as virgin wool, though that term also refers to wool that hasn’t yet been processed. The shearing of the lamb at this stage yields extremely smooth, soft and fine wool which also has hypoallergenic properties.<br />
@@ -253,8 +253,363 @@ function ContentSection3() {
     <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
         <div className='font-extrabold text-3xl w-full px-3 '>Shearing of Wool</div>
         <div className="image  mx-auto mt-5">
-        <iframe width="560" height="315" className='mx-auto rounded-sm overflow-hidden' src="https://www.youtube.com/embed/zM-ERTTmWv8?si=M87kDpH5gVP29IC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" className='mx-auto w-full rounded-md overflow-hidden' src="https://www.youtube.com/embed/zM-ERTTmWv8?si=M87kDpH5gVP29IC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+        <section className='w-full mt-5'>
+        Shearing usually takes place once
+          a year and most woolgrowers
+          employ specialist shearing teams,
+          who travel across Australia
+          shearing sheep for a living.
+          Depending on the number of sheep,
+          a shearing team can include two
+          or more shearers, one or two
+          woolhandlers and a wool classer.
+          <br/><b>The penner-up</b><br/>
+          During shearing, sheep are brought
+          in from the paddocks to the yards
+          around the shed, ready for penning up.
+          The penner-up is responsible for
+          keeping the pens (yards) in the
+          shearing shed full of sheep, ready for
+          the shearers.
+          When the sheep have been shorn, they
+          leave the shed, are counted, and may
+          be treated to prevent diseases before
+          being taken back to the paddocks.
+          <br/><b>The shearer</b><br/>          
+          Each shearer has their own stand,
+          electrically-driven machine handpiece
+          and small pen of sheep, called a
+          catching pen.
+          Shearers take a sheep from their
+          catching pen and position it at their
+          stand for shearing.
+          Shearers remove the fleece with a
+          number of long strokes with the
+          handpiece. After the belly, leg and
+          face wool have been removed and
+          collected by the woolhandler, the body
+          of the fleece comes off as one piece.
+          <br/><b>The woolhandler</b><br/> 
+          
+          As soon as the fleece has been shorn,
+          the woolhandler gathers up the fleece
+          and throws it across a large table.
+          The woolhandlers skirt the fleece.
+          Skirting removes the lower-quality
+          edges of the fleece, which are kept
+          separate from the main fleece wool.
+          This can include necks and pieces,
+          and soiled wool.
+          The remaining fleece is rolled and
+          given to the wool classer.
+          <br/><b> The wool classer</b><br/> 
+
+         
+          The wool classer sorts the wool into
+          five main categories — fleeces, necks,
+          pieces, bellies and locks.
+          Fleeces are also sorted into lines
+          (groups) according to their micron.
+          The classed wool is placed in nylon
+          bags and compressed in the wool 
+        </section>
+    </div>
+  )
+}
+
+
+function ContentSection4() {
+  return (
+    <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
+        <div className='font-extrabold text-3xl w-full px-3 '>Scouring of Wool</div>
+        <div className="image  mx-auto mt-5">
+        <iframe width="560" height="315" className='mx-auto w-full rounded-md overflow-hidden' src="https://www.youtube.com/embed/6ksPPt_w4Hc?si=tK2Aksd_rJ6EPqt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+        <section className='w-full mt-5'>
+        Shearing usually takes place once
+          a year and most woolgrowers
+          employ specialist shearing teams,
+          who travel across Australia
+          shearing sheep for a living.
+          Depending on the number of sheep,
+          a shearing team can include two
+          or more shearers, one or two
+          woolhandlers and a wool classer.
+          <br/><b>The penner-up</b><br/>
+          During shearing, sheep are brought
+          in from the paddocks to the yards
+          around the shed, ready for penning up.
+          The penner-up is responsible for
+          keeping the pens (yards) in the
+          shearing shed full of sheep, ready for
+          the shearers.
+          When the sheep have been shorn, they
+          leave the shed, are counted, and may
+          be treated to prevent diseases before
+          being taken back to the paddocks.
+          <br/><b>The shearer</b><br/>          
+          Each shearer has their own stand,
+          electrically-driven machine handpiece
+          and small pen of sheep, called a
+          catching pen.
+          Shearers take a sheep from their
+          catching pen and position it at their
+          stand for shearing.
+          Shearers remove the fleece with a
+          number of long strokes with the
+          handpiece. After the belly, leg and
+          face wool have been removed and
+          collected by the woolhandler, the body
+          of the fleece comes off as one piece.
+          <br/><b>The woolhandler</b><br/> 
+          
+          As soon as the fleece has been shorn,
+          the woolhandler gathers up the fleece
+          and throws it across a large table.
+          The woolhandlers skirt the fleece.
+          Skirting removes the lower-quality
+          edges of the fleece, which are kept
+          separate from the main fleece wool.
+          This can include necks and pieces,
+          and soiled wool.
+          The remaining fleece is rolled and
+          given to the wool classer.
+          <br/><b> The wool classer</b><br/> 
+
+         
+          The wool classer sorts the wool into
+          five main categories — fleeces, necks,
+          pieces, bellies and locks.
+          Fleeces are also sorted into lines
+          (groups) according to their micron.
+          The classed wool is placed in nylon
+          bags and compressed in the wool 
+        </section>
+    </div>
+  )
+}
+
+function ContentSection5() {
+  return (
+    <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
+        <div className='font-extrabold text-3xl w-full px-3 '>Sorting of Wool</div>
+        <div className="image  mx-auto mt-5">
+        <iframe width="560" height="315" className='mx-auto w-full rounded-md overflow-hidden' src="https://www.youtube.com/embed/2gZSTj-4qok?si=veUJ3EZwgUizgEhH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <section className='w-full mt-5'>
+        Shearing usually takes place once
+          a year and most woolgrowers
+          employ specialist shearing teams,
+          who travel across Australia
+          shearing sheep for a living.
+          Depending on the number of sheep,
+          a shearing team can include two
+          or more shearers, one or two
+          woolhandlers and a wool classer.
+          <br/><b>The penner-up</b><br/>
+          During shearing, sheep are brought
+          in from the paddocks to the yards
+          around the shed, ready for penning up.
+          The penner-up is responsible for
+          keeping the pens (yards) in the
+          shearing shed full of sheep, ready for
+          the shearers.
+          When the sheep have been shorn, they
+          leave the shed, are counted, and may
+          be treated to prevent diseases before
+          being taken back to the paddocks.
+          <br/><b>The shearer</b><br/>          
+          Each shearer has their own stand,
+          electrically-driven machine handpiece
+          and small pen of sheep, called a
+          catching pen.
+          Shearers take a sheep from their
+          catching pen and position it at their
+          stand for shearing.
+          Shearers remove the fleece with a
+          number of long strokes with the
+          handpiece. After the belly, leg and
+          face wool have been removed and
+          collected by the woolhandler, the body
+          of the fleece comes off as one piece.
+          <br/><b>The woolhandler</b><br/> 
+          
+          As soon as the fleece has been shorn,
+          the woolhandler gathers up the fleece
+          and throws it across a large table.
+          The woolhandlers skirt the fleece.
+          Skirting removes the lower-quality
+          edges of the fleece, which are kept
+          separate from the main fleece wool.
+          This can include necks and pieces,
+          and soiled wool.
+          The remaining fleece is rolled and
+          given to the wool classer.
+          <br/><b> The wool classer</b><br/> 
+
+         
+          The wool classer sorts the wool into
+          five main categories — fleeces, necks,
+          pieces, bellies and locks.
+          Fleeces are also sorted into lines
+          (groups) according to their micron.
+          The classed wool is placed in nylon
+          bags and compressed in the wool 
+        </section>
+    </div>
+  )
+}
+
+function ContentSection6() {
+  return (
+    <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
+        <div className='font-extrabold text-3xl w-full px-3 '>Combing of Wool</div>
+        <div className="image  mx-auto mt-5">
+<iframe width="560" className='mx-auto w-full rounded-md overflow-hidden' height="315" src="https://www.youtube.com/embed/eDRx88zToIg?si=eTQDMynlAoPg_emY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+        <section className='w-full mt-5'>
+        Shearing usually takes place once
+          a year and most woolgrowers
+          employ specialist shearing teams,
+          who travel across Australia
+          shearing sheep for a living.
+          Depending on the number of sheep,
+          a shearing team can include two
+          or more shearers, one or two
+          woolhandlers and a wool classer.
+          <br/><b>The penner-up</b><br/>
+          During shearing, sheep are brought
+          in from the paddocks to the yards
+          around the shed, ready for penning up.
+          The penner-up is responsible for
+          keeping the pens (yards) in the
+          shearing shed full of sheep, ready for
+          the shearers.
+          When the sheep have been shorn, they
+          leave the shed, are counted, and may
+          be treated to prevent diseases before
+          being taken back to the paddocks.
+          <br/><b>The shearer</b><br/>          
+          Each shearer has their own stand,
+          electrically-driven machine handpiece
+          and small pen of sheep, called a
+          catching pen.
+          Shearers take a sheep from their
+          catching pen and position it at their
+          stand for shearing.
+          Shearers remove the fleece with a
+          number of long strokes with the
+          handpiece. After the belly, leg and
+          face wool have been removed and
+          collected by the woolhandler, the body
+          of the fleece comes off as one piece.
+          <br/><b>The woolhandler</b><br/> 
+          
+          As soon as the fleece has been shorn,
+          the woolhandler gathers up the fleece
+          and throws it across a large table.
+          The woolhandlers skirt the fleece.
+          Skirting removes the lower-quality
+          edges of the fleece, which are kept
+          separate from the main fleece wool.
+          This can include necks and pieces,
+          and soiled wool.
+          The remaining fleece is rolled and
+          given to the wool classer.
+          <br/><b> The wool classer</b><br/> 
+
+         
+          The wool classer sorts the wool into
+          five main categories — fleeces, necks,
+          pieces, bellies and locks.
+          Fleeces are also sorted into lines
+          (groups) according to their micron.
+          The classed wool is placed in nylon
+          bags and compressed in the wool 
+        </section>
+    </div>
+  )
+}
+
+function ContentSection7() {
+  return (
+    <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
+        <div className='font-extrabold text-3xl w-full px-3 '>Dyeing of Wool</div>
+        <div className="image  mx-auto mt-5">
+        <iframe width="560" height="315" className='mx-auto w-full rounded-md overflow-hidden' src="https://www.youtube.com/embed/eDRx88zToIg?si=eTQDMynlAoPg_emY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <section className='w-full mt-5'>
+        Shearing usually takes place once
+          a year and most woolgrowers
+          employ specialist shearing teams,
+          who travel across Australia
+          shearing sheep for a living.
+          Depending on the number of sheep,
+          a shearing team can include two
+          or more shearers, one or two
+          woolhandlers and a wool classer.
+          <br/><b>The penner-up</b><br/>
+          During shearing, sheep are brought
+          in from the paddocks to the yards
+          around the shed, ready for penning up.
+          The penner-up is responsible for
+          keeping the pens (yards) in the
+          shearing shed full of sheep, ready for
+          the shearers.
+          When the sheep have been shorn, they
+          leave the shed, are counted, and may
+          be treated to prevent diseases before
+          being taken back to the paddocks.
+          <br/><b>The shearer</b><br/>          
+          Each shearer has their own stand,
+          electrically-driven machine handpiece
+          and small pen of sheep, called a
+          catching pen.
+          Shearers take a sheep from their
+          catching pen and position it at their
+          stand for shearing.
+          Shearers remove the fleece with a
+          number of long strokes with the
+          handpiece. After the belly, leg and
+          face wool have been removed and
+          collected by the woolhandler, the body
+          of the fleece comes off as one piece.
+          <br/><b>The woolhandler</b><br/> 
+          
+          As soon as the fleece has been shorn,
+          the woolhandler gathers up the fleece
+          and throws it across a large table.
+          The woolhandlers skirt the fleece.
+          Skirting removes the lower-quality
+          edges of the fleece, which are kept
+          separate from the main fleece wool.
+          This can include necks and pieces,
+          and soiled wool.
+          The remaining fleece is rolled and
+          given to the wool classer.
+          <br/><b> The wool classer</b><br/> 
+
+         
+          The wool classer sorts the wool into
+          five main categories — fleeces, necks,
+          pieces, bellies and locks.
+          Fleeces are also sorted into lines
+          (groups) according to their micron.
+          The classed wool is placed in nylon
+          bags and compressed in the wool 
+        </section>
+    </div>
+  )
+}
+
+function ContentSection8() {
+  return (
+    <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
+        <div className='font-extrabold text-3xl w-full px-3 '>Spinning of Wool</div>
+        <div className="image  mx-auto mt-5">
+        <iframe width="560" height="315" className='mx-auto w-full rounded-md overflow-hidden' src="https://www.youtube.com/embed/ltXHYIc015M?si=96eaSUolvi3vlLDB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <section className='w-full mt-5'>
         Shearing usually takes place once
           a year and most woolgrowers
@@ -323,9 +678,9 @@ function ContentSection9() {
   return (
     <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
         <div className='font-extrabold text-3xl w-full px-3 '>Common Sheep Diseases</div>
-        {/* <div className="image  mx-auto mt-5">
-        <iframe width="560" className='mx-auto w-full rounded-md overflow-hidden' height="315" src="https://www.youtube.com/embed/YwRbyTCqOQY?si=JW_objFdy-FGDpno" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div> */}
+        <div className="image  mx-auto mt-5">
+        <iframe width="560" height="315" className='mx-auto w-full rounded-md overflow-hidden' src="https://www.youtube.com/embed/3Fx2KAZp8s4?si=MvtQ2RttuZ-FXqDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>     
+               </div>
         <section className='w-full mt-5'>
         <b>1.  Foot Rot :</b><br />
           -  Cause : Foot rot is caused primarily by the bacterium *Dichelobacter nodosus*, with other bacteria often involved in secondary infections.<br />
@@ -386,14 +741,13 @@ function ContentSection9() {
   )
 }
 
-
 function ContentSection10() {
   return (
     <div className='w-full border-2 border-orange-300 h-[calc(100vh - 100px)] rounded-md p-3'>
         <div className='font-extrabold text-3xl w-full px-3 '>Methods to Increase Wool Production</div>
-        {/* <div className="image  mx-auto mt-5">
-        <iframe width="560" className='mx-auto w-full rounded-md overflow-hidden' height="315" src="https://www.youtube.com/embed/YwRbyTCqOQY?si=JW_objFdy-FGDpno" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div> */}
+        <div className="image  mx-auto mt-5">
+        <iframe width="560" height="315" className='mx-auto w-full rounded-md overflow-hidden' src="https://www.youtube.com/embed/yqbDlpu3XOc?si=pro7ijNqaUochghz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+               </div>
         <section className='w-full mt-5'>
 
         Increasing wool production in a sheep flock requires a combination of good management practices, genetics, nutrition, and health care. Here are some methods to help boost wool production:<br/>

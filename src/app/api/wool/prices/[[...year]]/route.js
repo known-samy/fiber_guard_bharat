@@ -14,7 +14,7 @@ export async function GET(req,{ params }) {
     const query = { _id: id };
     const doc = await Prices.findOne(query);
     console.log("query completed")
-    console.log(doc.year['2023']);
+    console.log(doc.year['2022']);
 
     let body = params.year;
     var year = new Date().getFullYear();
