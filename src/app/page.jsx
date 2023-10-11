@@ -17,19 +17,27 @@ import LineCh from '@/components/chart/Line';
 
 
 
+
 export default function Page() {
 
   const router = useRouter()
   const [prices,setPrices]= useState();
 
 
-  // useEffect(() => {
-  //   (async () => {
-  //     await fetch('http://localhost:3000/api/wool/prices/2003/2023 ')
-  //     .then(response=>response.json())
-  //     .then(json=> setPrices(json))
-  //   })();
-  // }, []);
+  useEffect(() => {
+    const callme = async () => {
+      await fetch('http://localhost:3000/api/system/address/208016')
+      .then(response =>{
+              // console.log(response)
+              console.log(response.body)
+
+                          
+            }         
+        )
+      .then(res => console.log(res))
+    };
+    callme();
+  }, []);
 
   if(prices!=undefined){
 
